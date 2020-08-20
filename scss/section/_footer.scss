@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 2px #A1A1A1;
+
+  span {
+    color: #535353;
+    text-shadow: 2px 2px 2px #DDD;
+  }
+}

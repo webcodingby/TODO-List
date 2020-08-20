@@ -1,0 +1,29 @@
+.header__form {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  input {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #343434;
+    background: transparent;
+  }
+
+  .button {
+    padding: 10px 30px;
+    border: 1px solid #343434;
+    border-radius: 10px;
+    background: transparent;
+    text-transform: uppercase;
+  }
+}
+
+.header__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0;
+  text-transform: uppercase;
+}

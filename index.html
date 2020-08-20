@@ -4,12 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODO</title>
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
-  <input name type="text">
-  <input name type="date">
-  <button type="submit">Add</button>
+  <div class="wrapper">
+    <header class="header">
+      <form class="header__form" name="todo__form">
+        <label class="header__title" for="todo">Todo:
+          <input name="todo" type="text" placeholder="Введите задачу">
+        </label>
+        <label class="header__title" for="date">Date:
+          <input name type="date">
+        </label>
+        <label class="header__title" for="button">
+          <button class="button" type="submit">Add</button>
+        </label>
+      </form>
+    </header>
+    <main class="main">
+      <section class="section__todo">
+        <h2 class="section__title todo__title">todo:</h2>
+        <div class="wrap">
+          <ul class="input__list">
+            <li class="input__elements">
+              <div class="elements__value">Сделать домашнюю работу</div>
+              <div class="elements__date">15.08.2020</div>
+              <div class="elements__button">
+                <button class="elements__add button" type="submit">add</button>
+                <button class="elements__delete button" type="reset">X</button>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="section__clear">
+          <button class="button todo__clear" type="reset">Clear All</button>
+        </div>
+      </section>
+      <section class="section__inprogres">
+        <h2 class="section__title inprogres__title">in progres:</h2>
+        <div class="section__clear">
+          <button class="button inprogres__clear" type="reset">Clear All</button>
+        </div>
+      </section>
+      <section class="section__done">
+        <h2 class="section__title done__title">done:</h2>
+        <div class="section__clear">
+          <button class="button done__clear" type="reset">Clear All</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h4 class="footer__title">
+        TODO-List by WebcodingBY <span>&copy; 2020</span>
+      </h4>
+    </footer>
+  </div>
+  
   <script src="./js/main.js"></script>
 </body>
 </html>
